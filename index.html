@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/389b769862.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+           box-sizing:border-box;
+        }
+
+        body {
+            margin:0;
+            font-family: 'Yantramanav', sans-serif;
+        }
+
+        .container {
+            width: 78%;
+            margin:0 auto;
+        }
+       
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin: 1vh 0;
+            font-weight: 500;            
+        }
+        h3 {
+            font-size: 30px;
+            margin:10px 0;
+            text-align: center;
+        }
+
+        p {
+            color:rgb(102,102,125)
+        }
+        .heading-span {
+            color:rgb(102,102,125);
+            position: relative;
+        }        
+        .dot {
+            width:8px;
+            height:8px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color:rgb(102,102,125);
+        }
+        .header-bgs-wrapper {
+            width:100%;
+            display: flex;
+            padding-bottom: 15px;
+        }
+
+        .bgs {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width:48%;
+            height:300px;
+        }
+        .header-bg2 {
+            margin-left: 4%;
+        }
+        .header-bg1{
+            background-image: url('https://images.pexels.com/photos/4352247/pexels-photo-4352247.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+           
+        }
+        .header-bg2 {
+            background-image: url('https://images.pexels.com/photos/3644742/pexels-photo-3644742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        }
+    
+        
+        .about,
+        .contact {
+            background-color: rgb(244,244,244);
+            text-align: center;
+            padding:20px
+            
+        }
+        .btn {
+            display: inline-block;
+            color:white;
+            background-color: black;
+            padding:15px 25px;
+            border-radius:5px;
+            margin:15px;   
+            cursor: pointer;        
+
+        }
+        .main-bgs-wrapper {
+            display: flex;
+        }
+        
+        .main-bg1 {
+            background-image: url("https://images.pexels.com/photos/2995012/pexels-photo-2995012.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-position: center bottom;
+            
+        }
+        .main-bg2{
+            margin-left:4%;
+            background-image: url("https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        }
+        .main-detail {
+            display: block;
+            text-align: center;
+            width:100%;
+        }
+        footer {
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            text-align: center;
+            margin:0;
+        }
+        
+        .unsubscribe {
+            cursor: pointer;
+        }
+        .unsubscribe:hover {
+            color:black
+        }
+        
+        
+        @media only screen and (max-width: 650px) {
+           .container{
+               width:95%;
+           }
+           h1 {
+               font-size: 32px;
+           }
+           h3 {
+               font-size: 24px;
+               margin:12px 0;
+           }          
+           .dot {
+              width: 5px;
+              height: 5px;
+            }
+            .bgs {
+                height: 200px;
+            }
+            
+       }
+       @media only screen and (max-width: 350px) {
+        .bgs {
+              height: 130px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+                 <div class="heading">
+                    <h1>CPN <span class = "dot"></span><span class = "heading-span"> Furniture</span></h1>
+                </div>
+                <div class = "header-bgs-wrapper">
+                <div class="bgs header-bg1"></div>
+                <div class="bgs header-bg2"></div>
+                 </div>               
+                </div>
+        </header>
+        <div class = "about container">
+            <h3>Creative Furniture Designs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+            <span class = "about-btn btn">More About Us</span>
+        </div>
+        <div class = "main container">            
+                <div class = "main-detail">
+                    <h3>Warm colors </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut en  ipsum dolor</p> 
+                </div>
+            <div class = "main-bgs-wrapper">
+                <div class="bgs main-bg1"></div>                               
+                <div class="bgs main-bg2"></div>
+            </div>
+        </div>
+        <div class="contact container">
+            <h3>Additional information</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut en  ipsum dolor</p>
+            <span class = "btn">More details</span>
+        </div>
+        <footer class = "container">
+            <p>To opt-out of receiving emails from this Company, <span class = "unsubscribe">unsubscribe here</span> </p>            
+            <p>@2021 Company Inc. All rights reserved. Company and Company logo are registered trademarks of Company, Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>
